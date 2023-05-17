@@ -15,9 +15,11 @@ import javax.swing.JOptionPane;
  */
 public class Conexion {
     
-    String url="jdbc:mysql://localhost:3306/reserva";
-	String user="root";
-	String password="";
+        public String db="proyectointegrado";
+        public String url="jdbc:mysql://192.168.0.20/" + db ;
+	public String user="usuario1";
+	public String password="usuario-1";
+        
     public Conexion() {
 		
 	}

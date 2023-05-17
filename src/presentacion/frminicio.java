@@ -43,13 +43,8 @@ public class frminicio extends javax.swing.JFrame {
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
         menuconficuracion = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -144,9 +139,6 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(helpMenu);
 
-        jMenu1.setText("Consultas");
-        menuBar.add(jMenu1);
-
         menuconficuracion.setText("Configuración");
 
         jMenuItem2.setText("Usuarios y Accesos");
@@ -158,24 +150,6 @@ public class frminicio extends javax.swing.JFrame {
         menuconficuracion.add(jMenuItem2);
 
         menuBar.add(menuconficuracion);
-
-        jMenu3.setText("Herramientas");
-        menuBar.add(jMenu3);
-
-        jMenu4.setText("Ayuda");
-
-        jMenuItem3.setText("Acerca de");
-        jMenu4.add(jMenuItem3);
-
-        jMenuItem4.setText("Ayuda");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem4);
-
-        menuBar.add(jMenu4);
 
         jMenu5.setText("Salir");
         jMenu5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -220,10 +194,6 @@ public class frminicio extends javax.swing.JFrame {
         form.toFront();
         form.setVisible(true);
     }//GEN-LAST:event_aboutMenuItemActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void deleteMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteMenuItemActionPerformed
         frmproducto form = new frmproducto();
@@ -296,14 +266,9 @@ public class frminicio extends javax.swing.JFrame {
     public static javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblidpersona;
     public static javax.swing.JLabel lblnombre;
