@@ -50,7 +50,7 @@ public class frmproducto extends javax.swing.JInternalFrame {
     }
     
     void habilitar(){
-        txtidproducto.setVisible(true);
+        txtidproducto.setVisible(false);
         txtnombre.setEnabled(true);
         txtdescripcion.setEnabled(true);
         txtprecio_venta.setEnabled(true);
@@ -73,6 +73,7 @@ public class frmproducto extends javax.swing.JInternalFrame {
             modelo=funcion.mostrar(buscar);
             
             tablalista.setModel(modelo);
+            ocultar_columnas();
             lbltotalregistros.setText("total de registros" + Integer.toString(funcion.totalregistros));
             
         } catch (Exception e) {
@@ -390,22 +391,15 @@ public class frmproducto extends javax.swing.JInternalFrame {
         accion="editar";
 
         int fila =tablalista.rowAtPoint(evt.getPoint());
-        //asignación de información en las columnas de la tabla
-       /* txtidproducto.setText(tablalista.getValueAt(fila, 0).toString());
-        txtnombre.setText(tablalista.getValueAt(fila, 1).toString());
-        txtdescripcion.setText(tablalista.getValueAt(fila, 2).toString());
-        cbounidad_medida.setSelectedItem(tablalista.getValueAt(fila, 3).toString());
-        txtprecio_venta.setText(tablalista.getValueAt(fila, 4).toString());*/
-       
-       
+        //asignación de información en las columnas de la tabla  
        
         txtidproducto.setText(tablalista.getValueAt(fila, 0).toString());
         txtnombre.setText(tablalista.getValueAt(fila, 1).toString());
         txtdescripcion.setText(tablalista.getValueAt(fila, 2).toString()); 
-        cbounidad_medida.setSelectedItem(tablalista.getValueAt(fila, 3).toString());
-        txtprecio_venta.setText(tablalista.getValueAt(fila, 4).toString());
+        cbounidad_medida.setSelectedItem(tablalista.getValueAt(fila, 4).toString());
+        txtprecio_venta.setText(tablalista.getValueAt(fila, 3).toString());
        
-       
+      
         
     }//GEN-LAST:event_tablalistaMouseClicked
 
@@ -488,7 +482,7 @@ public class frmproducto extends javax.swing.JInternalFrame {
 
         dts.setDescripcion(txtdescripcion.getText());
 
-        dts.setPrecio_venta(Double.parseDouble(txtprecio_venta.getText()));
+        dts.setPrecio_venta(Double.valueOf(txtprecio_venta.getText()));
 
         int seleccion=cbounidad_medida.getSelectedIndex();
         dts.setUnidad_medida((String)cbounidad_medida.getItemAt(seleccion));

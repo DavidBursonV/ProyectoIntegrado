@@ -68,7 +68,7 @@ public class frmtrabajador extends javax.swing.JInternalFrame {
     }
     
     void habilitar(){
-        txtidpersona.setVisible(true);
+        txtidpersona.setVisible(false);
         txtnombre.setEnabled(true);
         txtprimer_apellido.setEnabled(true);
         txtseg_apellido.setEnabled(true);

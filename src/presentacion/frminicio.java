@@ -42,14 +42,13 @@ public class frminicio extends javax.swing.JFrame {
         helpMenu = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
         menuconficuracion = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        escritorio.setBackground(new java.awt.Color(204, 204, 204));
+        escritorio.setBackground(new java.awt.Color(255, 255, 0));
         escritorio.setForeground(new java.awt.Color(0, 0, 0));
 
         lblidpersona.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -133,9 +132,6 @@ public class frminicio extends javax.swing.JFrame {
             }
         });
         helpMenu.add(aboutMenuItem);
-
-        jMenuItem1.setText("Pagos");
-        helpMenu.add(jMenuItem1);
 
         menuBar.add(helpMenu);
 
@@ -267,7 +263,6 @@ public class frminicio extends javax.swing.JFrame {
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblidpersona;
