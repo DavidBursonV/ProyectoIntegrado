@@ -54,9 +54,9 @@ public class PagoControl {
                                 registro[7] = rs.getString("fecha_pago");
                                 
 
-				totalregistros = totalregistros+1;
+				
 				modelo.addRow(registro);
-
+                                totalregistros = rs.getRow();
 			}
 
 			return modelo;

@@ -97,8 +97,8 @@ public class frmconsumo extends javax.swing.JInternalFrame {
             modelo=funcion.mostrar(buscar);
             
             tablalista.setModel(modelo);
-            lbltotalregistros.setText("total de registros" + Integer.toString(funcion.totalregistros));
-            lblconsumo.setText("Consumo total " + funcion.totalconsumo + "€");    
+            lbltotalregistros.setText("total de registros: " + Integer.toString(funcion.totalregistros));
+            lblconsumo.setText("Consumo total: " + funcion.totalconsumo + "€");    
             
         } catch (Exception e) {
             JOptionPane.showConfirmDialog(rootPane, e);

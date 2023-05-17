@@ -135,7 +135,7 @@ public class frmreserva extends javax.swing.JInternalFrame {
             modelo=funcion.mostrar(buscar);
             
             tablalista.setModel(modelo);
-            lbltotalregistros.setText("total de registros" + Integer.toString(funcion.totalregistros));
+            lbltotalregistros.setText("total de registros: " + Integer.toString(funcion.totalregistros));
             
         } catch (Exception e) {
             JOptionPane.showConfirmDialog(rootPane, e);

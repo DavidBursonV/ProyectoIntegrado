@@ -48,7 +48,7 @@ public class frminicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        escritorio.setBackground(new java.awt.Color(255, 255, 0));
+        escritorio.setBackground(new java.awt.Color(204, 204, 204));
         escritorio.setForeground(new java.awt.Color(0, 0, 0));
 
         lblidpersona.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -61,28 +61,28 @@ public class frminicio extends javax.swing.JFrame {
         lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("lblnombre");
         escritorio.add(lblnombre);
-        lblnombre.setBounds(20, 50, 120, 16);
+        lblnombre.setBounds(20, 50, 60, 16);
 
         lblprimerapellido.setBackground(new java.awt.Color(0, 0, 0));
         lblprimerapellido.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblprimerapellido.setForeground(new java.awt.Color(255, 255, 255));
         lblprimerapellido.setText("lblprimerapellido");
         escritorio.add(lblprimerapellido);
-        lblprimerapellido.setBounds(20, 80, 120, 16);
+        lblprimerapellido.setBounds(80, 50, 70, 16);
 
         lblsegapelldio.setBackground(new java.awt.Color(0, 0, 0));
         lblsegapelldio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblsegapelldio.setForeground(new java.awt.Color(255, 255, 255));
         lblsegapelldio.setText("lblsegapelldio");
         escritorio.add(lblsegapelldio);
-        lblsegapelldio.setBounds(20, 110, 120, 16);
+        lblsegapelldio.setBounds(140, 50, 70, 16);
 
         lblacceso.setBackground(new java.awt.Color(0, 0, 0));
         lblacceso.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblacceso.setForeground(new java.awt.Color(255, 255, 255));
         lblacceso.setText("acceso");
         escritorio.add(lblacceso);
-        lblacceso.setBounds(20, 140, 120, 16);
+        lblacceso.setBounds(20, 90, 120, 16);
 
         fileMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/hogar.png"))); // NOI18N
         fileMenu.setMnemonic('f');

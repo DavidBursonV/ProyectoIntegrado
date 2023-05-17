@@ -64,8 +64,9 @@ public class TrabajadorControl {
                 registro[13] = rs.getString("estado");
                 
 
-                totalregistros = totalregistros++;
+                
                 modelo.addRow(registro);
+                totalregistros = rs.getRow();
             }
             return modelo;
 
@@ -239,8 +240,9 @@ public class TrabajadorControl {
                 registro[7] = rs.getString("estado");
                 
 
-                totalregistros = totalregistros+1;
+                
                 modelo.addRow(registro);
+                totalregistros = rs.getRow();
             }
             return modelo;
 

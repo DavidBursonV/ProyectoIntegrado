@@ -74,7 +74,7 @@ public class frmproducto extends javax.swing.JInternalFrame {
             
             tablalista.setModel(modelo);
             ocultar_columnas();
-            lbltotalregistros.setText("total de registros" + Integer.toString(funcion.totalregistros));
+            lbltotalregistros.setText("total de registros: " + Integer.toString(funcion.totalregistros));
             
         } catch (Exception e) {
             JOptionPane.showConfirmDialog(rootPane, e);

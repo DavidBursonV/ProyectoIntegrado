@@ -59,8 +59,9 @@ public class ClienteControl {
                 registro[8] = rs.getString("email");
                 registro[9] = rs.getString("codigo_cliente");
 
-                totalregistros = totalregistros++;
+                //totalregistros = totalregistros++;
                 modelo.addRow(registro);
+                totalregistros = rs.getRow();
 
             }
 

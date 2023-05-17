@@ -50,9 +50,8 @@ public class HabitacionControl {
 				registro[6] = rs.getString("estado");
 				registro[7] = rs.getString("tipo_habitacion");
 
-				totalregistros = totalregistros++;
 				modelo.addRow(registro);
-
+                                totalregistros = rs.getRow();
 			}
 
 			return modelo;
@@ -223,9 +222,10 @@ public class HabitacionControl {
 				registro[6] = rs.getString("estado");
 				registro[7] = rs.getString("tipo_habitacion");
 
-				totalregistros = totalregistros++;
+				
 				modelo.addRow(registro);
 
+                                totalregistros = rs.getRow();
 			}
 
 			return modelo;

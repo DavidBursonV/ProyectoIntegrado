@@ -69,8 +69,9 @@ public class ReservaControl {
                                 registro[11] = rs.getString("precio_total");
                                 registro[12] = rs.getString("estado");
 
-				totalregistros = totalregistros ++;
+				
 				modelo.addRow(registro);
+                                totalregistros = rs.getRow();
 
 			}
 
@@ -196,24 +197,6 @@ public class ReservaControl {
 		
         }
         
-      /*  public int num_dias(DatosReserva dts){
-            String[] registro = new String[2];
-            
-            sSQL="SELECT precio_diario DATEDIFF (fecha_ingreso, fecha_salida) as num_dias FROM habitaciones WHERE id =?";
-            try {
-			Statement st = cn.createStatement();
-			ResultSet rs = st.executeQuery(sSQL);
-
-			registro[0] = rs.getString("precio_diario");
-                        registro[0] = rs.getString("num_dias");
-                        
-            JOptionPane.showMessageDialog(null, num_dias);
-			
-		} catch (Exception e) {
-			
-                }
-                     return 0;
-        }*/
 }
 
       

@@ -37,7 +37,7 @@ public class frmvistaProducto extends javax.swing.JFrame {
             modelo=funcion.mostrar(buscar);
             
             tablalista.setModel(modelo);
-            lbltotalregistros.setText("total de registros" + Integer.toString(funcion.totalregistros));
+            lbltotalregistros.setText("total de registros: " + Integer.toString(funcion.totalregistros));
             
         } catch (Exception e) {
             JOptionPane.showConfirmDialog(rootPane, e);

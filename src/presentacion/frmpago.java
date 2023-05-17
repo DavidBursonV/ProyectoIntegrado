@@ -135,7 +135,7 @@ public class frmpago extends javax.swing.JInternalFrame {
             modelo=funcion.mostrar(buscar);
             
             tablalista.setModel(modelo);
-            lbltotalregistros.setText("total de pagos " + Integer.toString(funcion.totalregistros));
+            lbltotalregistros.setText("total de pagos: " + Integer.toString(funcion.totalregistros));
             
             //Mostrar datos de consumos
             ConsumoControl funcion2 = new ConsumoControl();
@@ -143,7 +143,7 @@ public class frmpago extends javax.swing.JInternalFrame {
             tablalistaConsumo.setModel(modelo);
             ocultar_columnasConsumo();
             
-            lbltotalregistrosconsumo.setText("Total de Consumos " + funcion2.totalregistros);
+            lbltotalregistrosconsumo.setText("Total de Consumos: " + funcion2.totalregistros);
             
             lbltotalConsumo.setText("Consumo total: " + funcion2.totalconsumo);
             

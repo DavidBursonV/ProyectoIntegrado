@@ -51,11 +51,12 @@ public class ConsumoControl {
                                 registro[5] = rs.getString("precio_venta");
                                 registro[6] = rs.getString("estado");
 
-				totalregistros = totalregistros++;
+				
                                 totalconsumo = totalconsumo+ (rs.getDouble("cantidad") * rs.getDouble("precio_venta"));
                                 
 				modelo.addRow(registro);
-
+                                totalregistros = rs.getRow();
+                                
 			}
 
 			return modelo;

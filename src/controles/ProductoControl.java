@@ -47,8 +47,9 @@ public class ProductoControl {
 				registro[3] = rs.getString("precio_venta");
 				registro[4] = rs.getString("unidad_medida");
 
-				totalregistros = totalregistros++;
+				
 				modelo.addRow(registro);
+                                totalregistros = rs.getRow();
 
 			}
 
